@@ -12,6 +12,7 @@ if(!session_id()) {
 $fb = new Facebook\Facebook([
   'app_id' => '435318296547275',
   'app_secret' => '061afcf6ba7a56499d6034a6e9ce53ca',
+  'default_graph_version' => 'v2.6',
 ]);
 
 $helper = $fb->getRedirectLoginHelper();
